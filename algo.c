@@ -201,18 +201,8 @@ void TSP_cmd(pnode head) {
     for (int i = 0; i < arrlenth; i++) {
         scanf("%d", &arr[i]);
     }
-    // for (int i = 0; i < arrlenth; ++i)
-    // {
-    //      printf("%d , ", arr[i]);
-    // }
-    // printf("\n");
     int *arrCopy = (int *)(calloc(arrlenth, sizeof(int)));
     deep_copy(arr, arrCopy, arrlenth);
-    // for (int i = 0; i < arrlenth; ++i)
-    // {
-    //     printf("%d , ", arr[i]);
-    // }
-    // printf("\n");
     permotion(0, arrCopy, arrlenth);
     free(arr);
     free(arrCopy);
